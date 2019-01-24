@@ -45,7 +45,7 @@ public class Lab_1_IT_2660 {
         for (int i = 0; i < arrayList.length; i++){
             arrayList[i] = new Listing();
             arrayList[i].input();
-        }
+        } 
          
         for(int j = 2; j > -1; j--){
             System.out.println(arrayList[j].toString());
