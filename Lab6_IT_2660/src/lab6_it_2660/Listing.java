@@ -30,7 +30,7 @@ public class Listing {
     
     public String toString()
     {
-        return ("The name is: " + name + "\nThe id number is" + idNumber +
+        return ("The name is: " + name + "\nThe id number is: " + idNumber +
                 "\nThe GPA is: " + gradePointAverage + "\n");
     }
     
