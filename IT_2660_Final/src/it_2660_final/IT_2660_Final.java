@@ -18,29 +18,29 @@ public class IT_2660_Final {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Graph flyUS = new Graph(100);
+        Graph flyUS = new Graph(100000);
         Scanner keyboard = new Scanner(System.in);
         
         
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 100000; i++)
         {
-            Listing v = new Listing((int)(Math.random()*300));
+            Listing v = new Listing((int)(Math.random()*300000));
             flyUS.insertVertex(i,v);
         }
         
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 100000; i++)
         {
             int randomNum = (int)(Math.random()*5)+1;
             int count = randomNum;
             
             while(count <= 5)
             {
-                flyUS.insertEdge(i, (int)(Math.random()*100));
+                flyUS.insertEdge(i, (int)(Math.random()*100000));
                 count++;
             }
         }
         
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 100000; i++)
         {
             System.out.println("Hub " + i + "\'s ");
             flyUS.showVertex(i);
@@ -52,9 +52,9 @@ public class IT_2660_Final {
         System.out.println("Please enter the number you wish to search for: ");
         int userNumber = keyboard.nextInt();
         keyboard.nextLine();
-        if(userNumber > 99 || userNumber < 0)
+        if(userNumber > 99999 || userNumber < 0)
         {
-            System.out.println("You cannot enter a number larger than 99 "
+            System.out.println("You cannot enter a number larger than 99999 "
              + "or less than 0.");
             System.out.println("Please try again");
             
