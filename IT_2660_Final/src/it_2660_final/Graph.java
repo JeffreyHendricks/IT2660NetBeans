@@ -22,6 +22,7 @@ public class Graph {
     int numVerticesIncluded;
     int[] minPathLengths;
     int max, numberOfVertices;
+    int count = 0;
     
     public Graph(int n)
     {
@@ -79,6 +80,7 @@ public class Graph {
         {
             v = stack.pop();
             vertex[v].visit();
+            count++;
             for(int column = 0; column < numberOfVertices; column++)
             {
                 if(edge[v][column] == 1 && !vertex[column].getPushed())
@@ -107,6 +109,7 @@ public class Graph {
         {
             v = queue.remove();
             vertex[v].visit();
+            count++;
             for(int column = 0; column < numberOfVertices; column++)
             {
                 if(edge[v][column] == 1 && !vertex[column].getPushed())
@@ -116,6 +119,11 @@ public class Graph {
                 }
             }
         }
+    }
+    
+    public int getCount()
+    {
+        return count;
     }
     
     /*public int[][] DAlg(int startVertex)

@@ -79,6 +79,8 @@ public class IT_2660_Final {
             System.out.println("DFT of the graph starting at vertex: " 
                     + userNumber);
             flyUS.DFT(userNumber);
+            System.out.println("The number of nodes visited are: " 
+                    + flyUS.getCount());
         }
         else if(userAnswer.equalsIgnoreCase("B"))
         {
@@ -86,6 +88,8 @@ public class IT_2660_Final {
             System.out.println("BFT of the graph starting at vertex: " 
                     + userNumber);
             flyUS.BFT(userNumber);
+            System.out.println("The number of nodes visited are: " 
+                    + flyUS.getCount());
         }
         /*else if(userAnswer.equalsIgnoreCase("DA"))
         {
